@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firestore Pagination</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+  <div class="container"></div>
+  <div class="loading">Loading reviews...</div>
+  <div class="load-more">
+    <button>Load More</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+  <script>
+     const firebaseConfig = {
+      apiKey: "AIzaSyDxS9BBfLDunLsTvJkZFJ1XeSWqFHUVjY0",
+      authDomain: "pgination-project.firebaseapp.com",
+      projectId: "pgination-project",
+      storageBucket: "pgination-project.appspot.com",
+      messagingSenderId: "384182165289",
+      appId: "1:384182165289:web:98db968a764e7a6051e138"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db=firebase.firestore();
+  </script>
+  <script  src="/index.js"></script>
+</body>
+</html>
